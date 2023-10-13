@@ -20,9 +20,9 @@ while True:
         pipe[1] = width
     else:
         pipe[1] -= 1
-    if (jump_pressed == True) and not(keyboard.is_pressed("f")): # press f to jump
+    if (jump_pressed == True) and not(keyboard.is_pressed("w")): # press f to jump
         jump_pressed = False
-    elif keyboard.is_pressed("f") and not(jump_pressed):
+    elif keyboard.is_pressed("w") and not(jump_pressed):
         jump_pressed = True
         bird[2] = -1.3
     bird[0] += bird[2]
